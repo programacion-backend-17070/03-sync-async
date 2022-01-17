@@ -1,11 +1,7 @@
-const operacion = (a, b, cb) => cb(a,b)
+const operacion = (a, b, cb) => cb(a, b)
 
-const suma = (a, b) => a + b
-const resta = (a, b) => a - b
-const mul = (a, b) => a * b
-const div = (a, b) => a / b
+const suma = operacion(4, 2, (a, b) => a + b)
+const resta = operacion(4, 2, (a, b) => a - b)
 
-console.log(operacion(4,2, suma))
-console.log(operacion(4,2, resta))
-console.log(operacion(4,2, mul))
-console.log(operacion(4,2, div))
+console.log(suma)
+console.log(resta)

@@ -1,4 +1,7 @@
-const intervalo = setInterval(() => console.log("hola"), 2000)
-console.log(intervalo)
+const intervalo = setInterval(() => console.log("ejecutando"), 2000)
 
-setTimeout(() => clearInterval(intervalo), 10000)
+
+setTimeout(() => {
+  clearInterval(intervalo)
+  console.log("terminado")
+}, 9000)

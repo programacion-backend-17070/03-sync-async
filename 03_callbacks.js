@@ -1,24 +1,25 @@
+// const callback = () => console.log("fui llamada")
 
-function procesoLargo(path, cb) {
-  // hacer algo con path
-  cb()
+// const unaFunction = (nombre, cb) => {
+//   console.log(nombre)
+//   cb()
+// }
+
+// unaFunction("Lucas", callback)
+
+function pedido(nombre, cb) {
+  console.log("Preparando: " + nombre)
+  const resultado = nombre
+  const error = null
+  cb(error, resultado)
 }
 
-// estamos en la fila de la comida rapida, queremos pedir un KFC
-// hacemos el pedido de una cubeta de 16 piezas con pure y unos popcorn chicken
-// La preparacion del pollo dura aproximadamente 15 minutos.
-// pedimos, pagamos, esperamos
 
-function prepararKFC(pedido, cb) {
-  console.log(pedido);
-  const resultado = pedido
-  const error = null;
-  cb(error, resultado);
-}
+pedido("Paquete 5", (err, resultado) => {
+  if (error === null) {
 
-prepararKFC("Pollo", (error, res) => {
-  // tratamiento de error
-  console.log(res)
-});
-
-
+  } else {
+    //
+  }
+  console.log("Comer: " + resultado)
+})

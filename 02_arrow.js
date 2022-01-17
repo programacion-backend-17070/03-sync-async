@@ -1,13 +1,28 @@
-// sintaxis mas corta y elegante para definir funcioens
+function hola2 (nombre) {
+  return console.log(nombre)
+}
+
+// sintaxis mas corta y elegante para definir funciones
 
 // variable - parametros - cuerpo
-const hola = nombre => {
-  console.log(nombre)
-}
+
+const hola = nombre => console.log(nombre)
+
+
+const resultado = hola("Diego")
+
+console.log(resultado)
 
 const suma = (a, b) => a + b
 
-hola("Lalo")
-const resultado = suma(2, 2)
+const resultadoSuma = suma(2, 2)
+console.log(resultadoSuma)
 
-console.log(resultado)
+const alumno = () => ({ 
+  nombre: "Antonio",
+  edad: 24
+})
+
+const resultado3 = alumno()
+
+console.log(resultado3)
